@@ -9,15 +9,8 @@ const Profile = () => {
     const user = useSelector((state)=> state.user.user)
   return (
     <div>
-      <h1>{user.name}</h1>
-      <h4
-        onClick={() => {
-          dispatch(logout());
-          navigate("/login");
-        }}
-      >
-        Logout
-      </h4>
+      <h1>{user?.name}</h1>
+   
     </div>
   );
 }

@@ -1,0 +1,44 @@
+.map__container{
+    width: 80%;
+    height: 60vh;
+    /* background-color: red; */
+    text-align: center;
+    margin: 100px auto;
+    border: 1px black solid;
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .map__container{
+    width: 80%;
+    height: 60vh;
+    /* background-color: red; */
+    text-align: center;
+    margin: 100px auto;
+    border: 1px black solid;
+}}
+@media screen and (max-width: 576px) {
+       .map__container{
+    width: 80%;
+    height: 85vh;
+    /* background-color: red; */
+    text-align: center;
+    margin: 100px auto;
+    border: 1px black solid;
+}
+}
+
+/* For small devices */
+@media screen and (max-width: 365px) {
+ 
+   .map__container{
+    width: 95%;
+    height: 85vh;
+    /* background-color: red; */
+    text-align: center;
+    margin: 10px auto;
+    border: 1px black solid;
+}
+}
+
+

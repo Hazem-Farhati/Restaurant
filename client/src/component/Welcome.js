@@ -23,7 +23,7 @@ const Welcome = () => {
                 tree waters brought. Divide after there. Was. Created god
                 gathered don't you yielding herb you had. And isn't god.
               </p>
-              <div style={{ display: "flex", justifyContent: "center" }}>
+              <div className='book_button' >
                 <button>BOOK A TABLE</button>
               </div>
             </div>

@@ -1,0 +1,216 @@
+.foodhome {
+  /* background-color: #ff3406; */
+  min-height: 95rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://preview.colorlib.com/theme/foodfun/assets/images/food-bg.png.webp");
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+  margin-bottom: 20px;
+}
+.foodhome__container {
+  /* background-color: blue; */
+  width: 90%;
+  height: 90%;
+}
+.foodhome__text {
+  height: 15rem;
+}
+.foodhome__text p {
+  width: 40%;
+  color: rgb(40, 39, 39);
+}
+.foodhome__text .foodhome__title__color {
+  color: #ffb606;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.foodhome__text h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+.foodhome__text .foodhome__title_text {
+  font-size: 35px;
+}
+
+/* card */
+.foodhome__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    height: max-content;
+    
+}
+
+.foodhome__card__container{
+    background-color: #f9f9ff;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: #f9f9ff;
+    width: 350px;
+    height: max-content;
+
+}
+/* .foodhome__card__content img:hover{
+
+    width: 348px;
+
+} */
+.foodhome__card__content img{
+    width:100%;
+    height: 270px;
+    box-sizing: border-box !important;
+
+}
+.foodhome_card_title_price{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 15px;
+    /* background-color: green; */
+    height: 40px;
+        color: #131230;
+    font-family: "Playfair Display",serif;
+    text-transform: capitalize;
+    font-size: 20px !important;
+    font-weight: 700;
+    
+}
+.foodhome_card_title_price span{
+  margin-left: 90px;
+  /* font-size: 200px; */
+}
+.foodhome_card_description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.foodhome_card_description p{
+      padding: 15px;
+    /* background-color: rgb(17, 64, 17); */
+    height: 75px;
+    font-size: 14px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+.add__menu__reservation{
+  margin-right: 10px;
+  cursor: pointer;
+  background-color:#ffb606;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+
+@media screen and (max-width: 576px) {
+  .foodhome {
+  /* background-color: #ff3406; */
+
+  background-image: url("https://preview.colorlib.com/theme/foodfun/assets/images/food-bg.png.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+text-align: center;
+}
+.foodhome__card{
+  display: flex;
+  justify-content: center;
+/* background-color: red; */
+width: 100%;
+}
+  .foodhome__text p {
+      padding: 15px;
+    /* background-color: rgb(17, 64, 17); */
+    height: 75px;
+    width: 90%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.foodhome__card__container{
+    width: 340px;
+    height: max-content;
+margin-top: 0px;
+}
+
+.foodhome__card__content img{
+    width: 340px;
+    height: 240px;
+   
+
+}
+
+
+}
+
+/* For small devices */
+@media screen and (max-width: 365px) {
+.foodhome {
+  /* background-color: #ff3406; */
+
+  background-image: url("https://preview.colorlib.com/theme/foodfun/assets/images/food-bg.png.webp");
+  background-repeat: repeat;
+  background-position: center;
+text-align: center;
+}
+.foodhome__card{
+  display: flex;
+  justify-content: center;
+/* background-color: red; */
+width: 100%;
+}
+.foodhome__text {
+    padding-right: 30px;
+
+}
+  .foodhome__text p {
+      padding: 15px;
+    /* background-color: rgb(17, 64, 17); */
+    height: 65px;
+width: 100%;
+    font-size: 13px;
+    text-align: center;
+
+}
+
+.foodhome__card__container{
+  
+    width: 270px;
+    height: max-content;
+margin-top: 7px;
+margin-left: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.foodhome__card__content img{
+    width: 270px;
+    height: 220px;
+}
+.foodhome_card_title_price{
+    gap: 40px  
+}
+.foodhome_card_title_price h4{
+    padding-left: 5px;
+}
+.foodhome_card_description p{
+      padding: 10px;
+    /* background-color: rgb(17, 64, 17); */
+    min-height: 30px;
+    font-size: 14px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+}
+

@@ -1,0 +1,102 @@
+.customer{
+    width: 100%;
+    height: 30rem;
+    background-image: url("/public/images/testimonial-bg.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.customer__content{
+     
+}
+.customer__container{
+    width: auto;
+    height:30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+.customer__content h3{
+    font-family: "Playfair Display",serif;
+    font-size: 36px !important;
+    font-weight: 700;
+    color: aliceblue;
+   margin-left: 35px;
+   margin-bottom: 0;
+   
+}
+.customer__content p{
+    font-size: 10px !important;
+    color: rgba(240, 248, 255, 0.462);
+    height: 5px;
+    margin-top: 0;
+
+}
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+.customer{
+    width: 100%;
+    height: 25rem;
+    background-image: url("/public/images/testimonial-bg.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.customer__content{
+     
+}
+.customer__container{
+    width: auto;
+    max-height:25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+.customer__content h3{
+    font-family: "Playfair Display",serif;
+    font-size: 36px !important;
+    font-weight: 700;
+    color: aliceblue;
+   margin-left: 35px;
+   margin-bottom: 0;
+   
+}
+.customer__content p{
+    font-size: 10px !important;
+    color: rgba(240, 248, 255, 0.462);
+    height: 5px;
+    margin-top: 0;
+
+}
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 576px) {}
+
+/* For small devices */
+@media screen and (max-width: 365px) {
+    .customer__container{
+    width: auto;
+    max-height:25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+ .customer__content h3{
+    font-size: 26px !important;
+    padding: 0 5px;
+
+}
+ .customer__content p{
+    font-size: 8px !important;
+    padding: 10px;
+   
+   
+}
+
+}

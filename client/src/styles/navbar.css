@@ -1,5 +1,5 @@
 .navbar{
-    width: 100%;
+    width: 95%;
     height: 120px;
     /* background-color: black; */
     position: fixed;
@@ -42,6 +42,45 @@ padding: 15px;    /* background-color: rgb(4, 255, 0); */
     cursor: pointer;
 
 }
+   .navbar__content li .nav__profile__logo {
+ /* background-color: red; */
+     font-size: 30px;
+     color: #ffb606;
+     cursor: pointer;
+
+}
+.profile__navbar{
+    position: relative;
+    margin-right: 10px;
+
+}
+.profile__navbar .profile__navbar__content{
+    position: absolute;
+    background-color: #3a3939;
+    color: #fff;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.profile__navbar__content h5{
+    border: solid 1px black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 10px;
+    font-size: 10px;
+    cursor:pointer;
+    color: #fff;
+}
+.profile__navbar__content h6{
+    border: none;
+    font-size: 10px;  
+      padding-top: 0px;
+      margin-top: 0;
+    cursor:pointer;
+}
 .navbar__content .logo {
     display: flex;
     justify-content: center;
@@ -53,6 +92,20 @@ padding: 15px;    /* background-color: rgb(4, 255, 0); */
     padding: 15px;
 }
 
+.profile__navbar .profile__navbar__content__offline{
+    position: absolute;
+    background-color: #3a3939;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.profile__navbar__content__offline h5{
+    color: #fff;
+    font-size: 12px;
+}
 .nav__close,
 .nav__toggle {
         display: none;
@@ -73,6 +126,15 @@ padding: 15px;    /* background-color: rgb(4, 255, 0); */
 }
 .logo img {
     width: 25px;
+}
+.profile__navbar{
+    margin-right: 20px;
+
+}
+.profile__navbar .profile__navbar__content{
+    position: absolute;
+right: 0px;
+    
 }
 }
 
@@ -119,6 +181,9 @@ padding: 15px;    /* background-color: rgb(4, 255, 0); */
 }
 
 @media screen and (max-width: 576px) {
+    .navbar{
+        width: 100%;
+    }
     .navbar__container{
     height: 3.5rem; 
 }
@@ -126,17 +191,27 @@ padding: 15px;    /* background-color: rgb(4, 255, 0); */
     height:  3.5rem;
 }
     .navbar__content li {
-   font-size: 8px;
-       width: 95%;
+   font-size: 9px;
+       width: 100%;
+font-weight: 800;
+gap: 10px;
 
 }
+ 
 
 .navbar__content .logo {
- font-size: 8px;
+ font-size: 6px;
  gap: 0;
 }
 .logo img {
-    width: 15px;
+    width: 12px;
+}
+   .navbar__content li .nav__profile__logo {
+ /* background-color: red; */
+     font-size: 20px;
+     color: #ffb606;
+     cursor: pointer;
+
 }
 }
 
@@ -147,7 +222,6 @@ display: flex;
 flex-wrap:wrap ;
 height: 100%;
 width: 100%;
-
 }
 
 .navbar__container{
@@ -168,7 +242,7 @@ padding-left: 100px;
 }
 .navbar__content li h4 {
     cursor: pointer;
-
+margin-top: 0;
 }
 .navbar__content .logo {
    font-size: 15px;
@@ -193,5 +267,45 @@ display: unset
    background-color: transparent;
    width: 5%;
    height: 20px;
+}
+ .navbar__content li .nav__profile__logo {
+ /* background-color: red; */
+     font-size: 40px;
+     color: #ffb606;
+     cursor: pointer;
+
+}
+.profile__navbar .profile__navbar__content{
+  
+left: 0px;
+}
+.profile__navbar .profile__navbar__content{
+    position: absolute;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: none;
+  
+}
+.profile__navbar__content a{
+    text-decoration: none;
+}
+.profile__navbar__content h5{
+    border: solid 1px black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+.profile__navbar__content h6{
+    border: none;
+    font-size: 15px;
+      padding-top: 0px;
+      margin-top: 0;
+    cursor:pointer;
 }
 }

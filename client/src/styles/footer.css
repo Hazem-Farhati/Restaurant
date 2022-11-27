@@ -1,0 +1,161 @@
+.footer {
+    width: 100%;
+    height: 20rem;
+    background-color: #131230;
+    border-top: #48484bbc;
+   color: rgba(245, 245, 220, 0.462);
+}
+.footer__content{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+.footer__content .first__part {
+    /* background-color: aqua; */
+    height: 20rem;
+    width: 30%;
+}
+.footer__content .second__part{
+    /* background-color: red; */
+     height: 20rem;
+    width: 30%;
+}
+.footer__content .third__part{
+    /* background-color: blue; */
+     height: 20rem;
+    width: 30%;
+}
+.logo__foter{
+    display: flex;
+    gap: 10px;
+        padding:10px 20px;
+        padding-top: 70px;
+}
+.first__part p{
+    padding: 0 20px;
+}
+.contact__footer{
+       padding:10px 20px;
+        padding-top: 70px;
+}
+.contact__footer .location{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    gap: 5px;
+}
+.contact__footer .phone{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    gap: 5px;
+}
+
+.contact__footer .email{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    gap: 5px;
+}
+.third__part .opening{
+       padding:10px 20px;
+        padding-top: 70px;
+}
+/* //----------- media querry ----------------// */
+@media screen and (max-width: 992px) {
+.first__part p{
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    height: auto;
+    font-size: 15px;
+}
+
+.third__part .opening {
+       padding:10px 20px;
+        padding-top: 70px;
+}
+.third__part .opening p{
+    width: 100%;
+ font-size: 12px;     
+ margin-top: 30px;
+
+}
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .first__part p{
+   
+    font-size: 12px;
+}
+
+.third__part .opening p{
+ 
+ font-size: 9px;     
+
+
+}
+}
+@media screen and (max-width: 576px) {
+    .footer {
+  margin-top: 20px;
+}
+    .first__part p{
+   
+    font-size: 10px;
+}
+
+
+.third__part .opening p{
+    width: 100%;
+ font-size: 8px;     
+ margin-top: 19px;
+
+}
+.contact__footer .location {
+      font-size: 12px;
+}
+.contact__footer .phone {
+      font-size: 12px;
+}
+.contact__footer .email {
+      font-size: 12px;
+}
+}
+
+/* For small devices */
+@media screen and (max-width: 365px) {
+    .footer {
+    width: 100%;
+    min-height: 40rem;
+    background-color: #131230;
+    border-top: #48484bbc;
+   color: rgba(245, 245, 220, 0.462);
+}
+    .footer__content{
+height: 100%;
+width: 100%;
+display: unset;
+justify-content: center;
+gap: 20px;
+}
+.footer__content .first__part {
+    /* background-color: aqua; */
+    height: 10rem;
+    width: 100%;
+}
+.footer__content .second__part{
+    /* background-color: red; */
+     height: 10rem;
+    width: 100%;
+}
+.footer__content .third__part{
+    /* background-color: blue; */
+     height: 10rem;
+     margin-top: 20px;
+    width: 100%;
+}
+}
+

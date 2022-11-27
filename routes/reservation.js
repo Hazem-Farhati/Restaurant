@@ -53,4 +53,18 @@ reservationRouter.put("/update/:id", async (req, res) => {
   }
 });
 
+//update all reservation
+reservationRouter.put("/update/all", async (req, res) => {
+  try {
+    let result = await Reservation.updateMany(
+    // {date: {}}
+      { date: req.params.date },
+      { $set: { ...req.body } }
+    );
+    res.send({ msg: " all reservation is updated" });
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 module.exports = reservationRouter;
