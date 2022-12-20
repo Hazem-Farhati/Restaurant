@@ -46,6 +46,20 @@ export const updatReservation = createAsyncThunk(
   }
 );
 
+//delet reservation
+export const deleteReservation = createAsyncThunk(
+  "reservation/delete",
+  async ({ id }) => {
+    try {
+      let result = await axios.delete(
+        `http://localhost:5000/reservation/delete/${id}`
+      );
+      return result.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+);
 //update all reservation
 export const updateAllReservation = createAsyncThunk(
   "reservation/all/update",
@@ -119,6 +133,18 @@ export const reservationSlice = createSlice({
       state.status = "fullfilled";
     },
     [updateAllReservation.rejected]: (state) => {
+      state.status = "rejected";
+    },
+
+    /////////////delet reservation//////////////
+    [deleteReservation.pending]: (state) => {
+      state.status = "pending";
+    },
+    [deleteReservation.fulfilled]: (state, action) => {
+      state.status = "fullfilled";
+      console.log(action.payload);
+    },
+    [deleteReservation.rejected]: (state) => {
       state.status = "rejected";
     },
   },

@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { logout } from '../redux/userSlice/userSlice'
 
 const Profile = () => {
     const navigate=useNavigate()
@@ -10,7 +9,7 @@ const Profile = () => {
   return (
     <div>
       <h1>{user?.name}</h1>
-   
+      <h1>{user?.email}</h1>
     </div>
   );
 }

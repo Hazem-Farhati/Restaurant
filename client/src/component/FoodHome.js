@@ -3,7 +3,7 @@ import "../styles/foodHome.css";
 import FoodHomeCard from "./FoodHomeCard";
 import { useSelector } from "react-redux";
 
-const FoodHome = ({ setShowfood ,ping , setPing }) => {
+const FoodHome = ({ setShowfood, ping, setPing, allNames, setAllNames }) => {
   const menu = useSelector((state) => state?.menu?.menu);
   console.log(menu);
   return (
@@ -30,6 +30,7 @@ const FoodHome = ({ setShowfood ,ping , setPing }) => {
                   key={i}
                   ping={ping}
                   setPing={setPing}
+                  
                 />
               ))}
 

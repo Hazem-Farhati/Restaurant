@@ -14,6 +14,8 @@ import Menu from "./pages/Menu";
 import { getMenu } from "./redux/menuSlice/menuSlice";
 import Contact from "./pages/Contact";
 import { getReservation } from "./redux/reservationSlice/reservationSlice";
+import Feedback from "./component/Feedback";
+import { getFeedback } from "./redux/feedbackSlice/feedbackSlice";
 
 function App() {
   const location = useLocation();
@@ -25,6 +27,7 @@ function App() {
     if (isAuth) {
       dispatch(userCurrent());
       dispatch(getReservation());
+      dispatch(getFeedback());
     }
     dispatch(getMenu());
   }, [dispatch, isAuth, ping]);
@@ -35,7 +38,15 @@ function App() {
         <div className="main-cont">
           <Routes>
             <Route path="/" element={<Home />} />{" "}
-            <Route path="/menu" element={<Menu ping={ping} setPing={setPing} />} />
+            <Route
+              path="/menu"
+              element={<Menu ping={ping} setPing={setPing} />}
+            />
+            <Route path="/contact" element={<Contact />} />{" "}
+            <Route
+              path="/feedback"
+              element={<Feedback ping={ping} setPing={setPing} />}
+            />{" "}
             <Route path="/contact" element={<Contact />} />{" "}
             <Route path="/login" element={<Register />} />
             <Route element={<PrivateRoute />}>

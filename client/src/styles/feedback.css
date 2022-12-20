@@ -1,0 +1,234 @@
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
+    overflow: hidden;
+    list-style: none;
+    /* padding: 154px; */
+    width: 300px;
+    z-index: 1;
+    /* background-color: blue; */
+}
+.testimonial{
+    /* background-color: red; */
+width: 100%;
+min-height: 40rem;
+}
+.section__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    gap: 10px;
+   padding-top: 150px;
+
+
+}
+.section__title h2{
+    /* text-align: center; */
+   /* background-color: blue; */
+}
+.section__title h3{
+    /* text-align: center; */
+   /* background-color: blue; */
+   height: 40px;
+   width: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+    border-radius: 50%;
+    background-color: #ffb606;
+    cursor: pointer;
+
+}
+/* .section__subtitle{
+    text-align: center;
+} */
+.testimonial__container{
+    width: 441.1px;
+    height: 255px;
+     margin-top: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    /* background-color: red; */
+     /* box-sizing: unset ; */
+}
+.swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+.swiper-backface-hidden .swiper-slide {
+    width: 582px !important;
+    height: 217px !important;
+}
+.testimonial__card{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2.03rem;
+    border-radius: 1.5rem;
+    margin-bottom: var(--mb-3);
+    width: 140px;
+    /* position: relative; */
+    /* box-sizing: none; */
+}
+.testimonial_img{
+    width: 100px;
+    border-radius: 0.5rem;
+    margin-bottom: var(--mb-1);
+}
+.testimonial__name{
+
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    margin-bottom: var(--mb-0-25);
+}
+.testimonial__description{
+    font-size: var(--small-font-size);
+}
+.testimonial__description__date{
+    font-size: 12px;
+}
+
+/*Swiper Class*/
+.swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    width: 275px !important;
+    height: 500px !important;
+}
+.swiper-pagination-bullet{
+    background-color: var(--title-color) !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--title-color) !important;
+}
+/* Dark mode*/
+#dark .testimonial__card{
+    background-color: #9a9ea1f7;
+}
+#dark .testimonial__name{
+    color: #242132;
+}
+#dark .testimonial__description{
+    color: #242132ba;
+}
+#dark .swiper-pagination-bullet{
+    background-color: #BCC5CE !important;
+}
+
+element.style {
+    width: 442px;
+    margin-right: 8px;
+}
+.swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+.swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    width: 375px !important;
+    height: 200px !important;
+}
+.delet_update_fb_icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+.delet_update_fb_icon .uil-pen{
+    /* background-color: red; */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+
+} 
+.delet_update_fb_icon .uil-pen:hover{
+    background-color: #ffb606;
+  cursor: pointer;
+  border-radius: 50%;
+
+} 
+.delet_update_fb_icon .uil-trash-alt{
+    /* background-color: red; */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+}
+ .delet_update_fb_icon .uil-trash-alt:hover{
+    background-color: red;
+  cursor: pointer;
+  border-radius: 50%;
+color: white;
+} 
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    /* .testimonial__container{
+    width: 1500px;
+    height: 300px;
+} */
+    .testimonial__description{
+        width: initial;
+    }
+    .testimonial__card{
+        padding: 1.25rem 1.5rem;
+        width: 195px;
+    }
+}
+.updatebtn__date{
+    /* position: relative; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 230px;
+    /* bottom: 10px; */
+    /* background-color: red; */
+    /* margin-top: 90px; */
+}
+.updatebtn__date p{
+        position: absolute;
+    bottom: 10px;
+
+}
+.updatebtn__date .delet_update_fb_icon{
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+.testimonial__container{
+    width: 400px;
+    height: 300px;
+}
+}
+
+@media screen and (max-width: 576px) {
+    .testimonial__container{
+    width: 300px;
+    height: 300px;
+}
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .testimonial__container{
+    width: 290px;
+    height: 300px;
+}
+
+}

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import  { useState,useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createReservation } from "../redux/reservationSlice/reservationSlice";
 
-const FoodHomeCard = ({ el, i, setShowfood ,ping , setPing }) => {
+const FoodHomeCard = ({ el, i, setShowfood, ping, setPing }) => {
   const user = useSelector((state) => state?.user?.user);
 
   const dispatch = useDispatch();
@@ -12,6 +12,8 @@ const FoodHomeCard = ({ el, i, setShowfood ,ping , setPing }) => {
     width: "450px",
     height: "270px",
   });
+
+
 
   return (
     <>
@@ -50,7 +52,9 @@ const FoodHomeCard = ({ el, i, setShowfood ,ping , setPing }) => {
                     })
                   );
                   setPing(!ping)
-                 setShowfood(true)}}
+                  //  setShowfood(true)
+                }}
+             
               >
                 +
               </h1>
